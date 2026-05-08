@@ -11,6 +11,13 @@ public Transform camHolder;
 
 private float xRotation = 0f; // 상하 회전 누적값
 
+void Start()
+{
+    // 마우스 커서 숨기고 고정
+    Cursor.lockState = CursorLockMode.Locked;
+    Cursor.visible = false;
+}
+
 public void PlayerLook(InputAction.CallbackContext context)
 {
     if (!context.performed) return;

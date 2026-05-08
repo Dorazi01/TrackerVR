@@ -26,7 +26,7 @@ public class PlayerFire : MonoBehaviour
         {
             GameObject bullet = Instantiate(BulletPrefab, GunTip.position, GunTip.rotation);
             Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
-            bulletRb.AddForce(GunTip.forward * 300f);
+            bulletRb.AddForce(GunTip.forward * 8000f);
         }
     }
 }
